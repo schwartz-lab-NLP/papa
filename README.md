@@ -18,9 +18,9 @@ To use our code please first follow the instrunctions in [here](https://huggingf
 Once evrything is set, copy our [transformers/papa_modules.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/papa_modules.py
 ) and [transformers/modeling_utils.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/modeling_utils.py) files into the transformers directory.
 
-Then, you can update your models to our vesrion (we provide the code for BERT/RoBERTa/DeBERTa), by copying the relevant files of your desired model from our [models](https://github.com/schwartz-lab-NLP/papa/tree/main/models) directory to the transformers/models directory.
+Then, you can update the desired model's code to our vesrion (we provide the code for BERT/RoBERTa/DeBERTa), by copying the relevant files of the model from our [models](https://github.com/schwartz-lab-NLP/papa/tree/main/models) directory to the transformers/models directory.
 
-Lastly, copy our [scripts](https://github.com/schwartz-lab-NLP/papa/tree/main/scripts) (which our based on Hugging Face scripts), to some (main?) directory.
+Lastly, copy our [scripts](https://github.com/schwartz-lab-NLP/papa/tree/main/scripts) (which are based on Hugging Face scripts), to some (main?) directory.
 
 
 As an example we will provide the full command lines in order to run PAPA over [BERT BASE](https://huggingface.co/bert-base-uncased) with the [CoLA](https://nyu-mll.github.io/CoLA/) task:
@@ -52,4 +52,4 @@ python3 run_papa_glue.py --model_name_or_path ${MODEL} --task_name ${TASK} --do_
 done
 ```
 
-To perform the same analsys with token-classification tasks use the scripts [run_papa_ner.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_ner.py) instead of [run_papa_glue.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_glue.py) and [run_papa_ner_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_ner_avgs_creator.py) instead of [run_papa_glue_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_glue_avgs_creator.py).
+To perform the same analysis with token-classification tasks use the scripts [run_papa_ner.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_ner.py) instead of [run_papa_glue.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_glue.py) and [run_papa_ner_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_ner_avgs_creator.py) instead of [run_papa_glue_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_glue_avgs_creator.py).
