@@ -3,7 +3,7 @@ Code for the PAPA paper
 
 #### How to use
 
-Our code is based on the Hugging Face framework - https://github.com/huggingface (specificlly on the transformers library).
+Our code is based on the [Hugging Face](https://github.com/huggingface) framework (specificlly on the transformers library).
 To use our code please first follow the instrunctions in [here](https://huggingface.co/docs/transformers/installation#editable-install).
 
 Once evrything is set, copy our [transformers/papa_modules.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/papa_modules.py
