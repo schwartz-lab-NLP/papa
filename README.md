@@ -1,7 +1,7 @@
 # PAPA
 Code for the PAPA paper
 
-#### How to use
+## How to use
 
 Our code is based on the [Hugging Face](https://github.com/huggingface) framework (specificlly on the transformers library).
 To use our code please first follow the instrunctions in [here](https://huggingface.co/docs/transformers/installation#editable-install).
