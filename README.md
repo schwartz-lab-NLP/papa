@@ -1,5 +1,14 @@
 # PAPA
-Code for the PAPA paper
+This repository contains the code for our paper: How Much Does Attention Actually Attend? Questioning the Importance of Attention in Pretrained Transformers by Michael Hassid, Hao Peng, Daniel Rotem, Jungo Kasai, Ivan Montero, Noah A. Smith and Roy Schwartz.
+
+<p align="center">
+  <img src="github/teaser_1.jpg" width="50%" height="50%">
+</p>
+
+## Citation:
+```
+ADD!
+```
 
 ## How to use
 
