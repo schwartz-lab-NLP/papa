@@ -1,5 +1,5 @@
 # PAPA
-This repository contains the code for our paper: How Much Does Attention Actually Attend? Questioning the Importance of Attention in Pretrained Transformers by Michael Hassid, Hao Peng, Daniel Rotem, Jungo Kasai, Ivan Montero, Noah A. Smith and Roy Schwartz.
+This repository contains the code for our our Findings of EMNLP 2022 paper: How Much Does Attention Actually Attend? Questioning the Importance of Attention in Pretrained Transformers by Michael Hassid, Hao Peng, Daniel Rotem, Jungo Kasai, Ivan Montero, Noah A. Smith and Roy Schwartz.
 
 <p align="center">
   <img src="github/teaser_1.jpg" width="50%" height="50%">
@@ -7,7 +7,12 @@ This repository contains the code for our paper: How Much Does Attention Actuall
 
 ## Citation:
 ```
-ADD!
+@inproceedingsi{Hassid:2022,
+        author = {Michael Hassid and Hao Peng and Daniel Rotem and Jungo Kasai and Ivan Montero and Noah A. Smith and Roy Schwartz},
+        title = {How Much Does Attention Actually Attend? Questioning the Importance of Attention in Pretrained Transformers},
+	booktitle = {In Findings of EMNLP},
+        year = {2022}
+}
 ```
 
 ## How to use
@@ -15,15 +20,15 @@ ADD!
 Our code is based on the [Hugging Face](https://github.com/huggingface) framework (specificlly on the transformers library).
 To use our code please first follow the instrunctions in [here](https://huggingface.co/docs/transformers/installation#editable-install).
 
-Once evrything is set, copy our [transformers/papa_modules.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/papa_modules.py
-) and [transformers/modeling_utils.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/modeling_utils.py) files into the transformers directory.
-
-Then, you can update the desired model's code to our vesrion (we provide the code for BERT/RoBERTa/DeBERTa), by copying the relevant files of the model from our [models](https://github.com/schwartz-lab-NLP/papa/tree/main/models) directory to the transformers/models directory.
-
-Lastly, copy our [scripts](https://github.com/schwartz-lab-NLP/papa/tree/main/scripts) (which are based on Hugging Face scripts), to some (main?) directory.
-
+Once evrything is set, copy our [transformers/](https://github.com/schwartz-lab-NLP/papa/tree/main/transformers
+) directory to the original transformers directory (this will add some scripts and required capablities).
 
 As an example we will provide the full command lines in order to run PAPA over [BERT BASE](https://huggingface.co/bert-base-uncased) with the [CoLA](https://nyu-mll.github.io/CoLA/) task:
+
+First navigate to the papa_scripts directory:
+```bash
+cd transformers/papa_scripts
+```
 
 To extract the constant matrices, run:
 ```bash
@@ -52,4 +57,4 @@ python3 run_papa_glue.py --model_name_or_path ${MODEL} --task_name ${TASK} --do_
 done
 ```
 
-To perform the same analysis with token-classification tasks use the scripts [run_papa_ner.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_ner.py) instead of [run_papa_glue.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_glue.py) and [run_papa_ner_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_ner_avgs_creator.py) instead of [run_papa_glue_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/scripts/run_papa_glue_avgs_creator.py).
+To perform the same analysis with token-classification tasks use the scripts [run_papa_ner.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/papa_scripts/run_papa_ner.py) instead of [run_papa_glue.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/papa_scripts/run_papa_glue.py) and [run_papa_ner_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/papa_scripts/run_papa_ner_avgs_creator.py) instead of [run_papa_glue_avgs_creator.py](https://github.com/schwartz-lab-NLP/papa/blob/main/transformers/papa_scripts/run_papa_glue_avgs_creator.py).
