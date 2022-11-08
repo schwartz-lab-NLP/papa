@@ -1,5 +1,5 @@
 # PAPA
-This repository contains the code for our our Findings of EMNLP 2022 paper: How Much Does Attention Actually Attend? Questioning the Importance of Attention in Pretrained Transformers by Michael Hassid, Hao Peng, Daniel Rotem, Jungo Kasai, Ivan Montero, Noah A. Smith and Roy Schwartz.
+This repository contains the code for our our Findings of EMNLP 2022 paper: [How Much Does Attention Actually Attend? Questioning the Importance of Attention in Pretrained Transformers](https://arxiv.org/abs/2211.03495) by Michael Hassid, Hao Peng, Daniel Rotem, Jungo Kasai, Ivan Montero, Noah A. Smith and Roy Schwartz.
 
 <p align="center">
   <img src="github/teaser_1.jpg" width="50%" height="50%">
